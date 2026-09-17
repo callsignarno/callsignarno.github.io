@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>callsignarno Portfolio</title>
+  <title>callsignarno | Arno Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <!-- Navbar -->
   <header>
@@ -18,16 +20,19 @@
         <li class="dropdown">
           <a href="#">Skills ▾</a>
           <ul class="dropdown-menu">
-            <li><a href="#python">Python</a></li>
-            <li><a href="#c">C</a></li>
-            <li><a href="#other-skills">More...</a></li>
+            <li><a href="#technical-skills">Technical Skills</a></li>
+            <li><a href="#core-skills">Core Competencies</a></li>
           </ul>
         </li>
+
+        <li><a href="#projects">Projects</a></li>
 
         <!-- More Dropdown -->
         <li class="dropdown">
           <a href="#">More ▾</a>
           <ul class="dropdown-menu">
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certifications">Certifications</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#socials">Socials</a></li>
           </ul>
@@ -38,58 +43,237 @@
 
   <!-- Hero Section -->
   <section class="hero">
-    <h1>Hi, I'm Arno </h1>
-    <p>Aspiring software engineer, learning <strong>Python</strong> and <strong>C</strong>.  
-       Building my foundation before starting projects.</p>
-    <a href="#skills" class="btn">See My Skills</a>
+    <h1>Hi, I'm Arno</h1>
+    <p>Information Science & Engineering undergraduate at <strong>RVCE</strong>. <br>Building intelligent
+      systems, distributed architectures and full-stack platforms.</p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn">See My Projects</a>
+      <a href="resume.pdf" target="_blank" class="btn btn-secondary">View Resume</a>
+    </div>
   </section>
 
   <!-- About Section -->
   <section id="about">
     <h2>About Me</h2>
     <p>
-      I’m currently focused on learning programming fundamentals.  
-      No projects yet, but I’m building my skills steadily to create meaningful work in the future.
+      I'm an Information Science & Engineering student at RV College of Engineering (RVCE), Bangalore.
+      Passionate about architecting reliable software solutions, exploring intelligent systems with vector embeddings,
+      and engineering resilient distributed systems and full-stack platforms.
     </p>
+
+    <div class="item-card">
+      <h3>Languages</h3>
+      <p>English (Fluent), Hindi (Fluent), Bengali (Native)</p>
+    </div>
+
+    <div class="item-card">
+      <h3>Interests</h3>
+      <p>Exploring Complex Systems, Fiction and Literature, SoulsBorne Games</p>
+    </div>
   </section>
 
   <!-- Skills Section -->
   <section id="skills">
     <h2>Skills Overview</h2>
 
-    <section id="python">
-      <h3>Python</h3>
-      <p>Learning basics, problem solving, scripting, and data handling.</p>
+    <section id="technical-skills">
+      <h3>Technical Skills</h3>
+      <p>Core programming languages, frameworks, and system engineering tools:</p>
+      <ul class="tag-list">
+        <li>C</li>
+        <li>C++</li>
+        <li>Python (Pandas, NumPy)</li>
+        <li>SQL Query Writing</li>
+        <li>RAG Embeddings</li>
+        <li>Vector Databases (pgVectors)</li>
+        <li>Supabase</li>
+        <li>PostgreSQL</li>
+        <li>Linux</li>
+        <li>Git & GitHub</li>
+        <li>REST APIs</li>
+        <li>Visualization (Power BI)</li>
+      </ul>
     </section>
 
-    <section id="c">
-      <h3>C</h3>
-      <p>Understanding low-level programming, memory management, and logic building.</p>
-    </section>
-
-    <section id="other-skills">
-      <h3>Other Skills</h3>
-      <p>Git, GitHub, HTML & CSS basics. Planning to expand into more areas.</p>
+    <section id="core-skills">
+      <h3>Core Competencies</h3>
+      <ul class="tag-list">
+        <li>Analytical Thinking</li>
+        <li>Problem-solving</li>
+        <li>Debugging</li>
+        <li>Research</li>
+        <li>Team Collaboration</li>
+        <li>Communication</li>
+        <li>Organization</li>
+      </ul>
     </section>
   </section>
 
-  <!-- Contact Section -->
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Want to connect? Reach out at:</p>
-  <p>
-    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=arnabonly2005@gmail.com" target="_blank">
-      arnabonly2005@gmail.com
-    </a>
-  </p>
-</section>
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
 
+    <div class="item-card">
+      <h3>StudyBuddy – AI Document Assistant</h3>
+      <div class="item-meta">
+        <span class="item-badge">AI / RAG Based</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Built a RAG system for semantic search and AI chat over PDF documents.</li>
+        <li>Implemented embeddings and cosine similarity retrieval using pgVectors.</li>
+        <li>Developed citation-based responses with real-time streaming and adaptive quiz system.</li>
+      </ul>
+      <ul class="tag-list">
+        <li>Python</li>
+        <li>RAG</li>
+        <li>pgVectors</li>
+        <li>Vector Search</li>
+        <li>PostgreSQL</li>
+      </ul>
+    </div>
+
+    <div class="item-card">
+      <h3>AI Curriculum Builder & Learning Assistant</h3>
+      <div class="item-meta">
+        <span class="item-badge">Team Project</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Built on AI systems to generate structured learning roadmaps based on user input.</li>
+        <li>Designed prompt workflows to ensure coherent, explanatory educational outputs.</li>
+        <li>Integrated YouTube API and developed a full-stack application with persistent storage.</li>
+      </ul>
+      <ul class="tag-list">
+        <li>Python</li>
+        <li>Prompt Workflows</li>
+        <li>YouTube API</li>
+        <li>Full-Stack</li>
+      </ul>
+    </div>
+
+    <div class="item-card">
+      <h3>Cerberus – Multi-node Failover System</h3>
+      <div class="item-meta">
+        <span class="item-badge">Team Project</span>
+        <span class="item-badge">IoT / Systems</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Designed a 3-node ESP32 gateway architecture with primary, secondary, and connectivity nodes for failover.
+        </li>
+        <li>Developed redundant communication enabling automatic backup-node takeover during primary failure.</li>
+        <li>Implemented dual-mode monitoring with internet and offline dashboards via connectivity node's Wi-Fi hotspot.
+        </li>
+      </ul>
+      <ul class="tag-list">
+        <li>C/C++</li>
+        <li>ESP32</li>
+        <li>Distributed Gateways</li>
+        <li>Redundant Networking</li>
+        <li>Wi-Fi Hotspot</li>
+      </ul>
+    </div>
+
+    <div class="item-card">
+      <h3>ExamCraft – Timed MCQ & CBT Exam Platform</h3>
+      <div class="item-meta">
+        <span class="item-badge">Full-Stack Platform</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Built and deployed a full-stack examination platform with Supabase-backed PDF question-paper storage.</li>
+        <li>Implemented OMR-based tests, automatic evaluation, and performance dashboards for score tracking.</li>
+        <li>Enabled users to create and publish custom tests, allowing other users to access and attempt them.</li>
+      </ul>
+      <ul class="tag-list">
+        <li>Full-Stack</li>
+        <li>Supabase</li>
+        <li>PostgreSQL</li>
+        <li>OMR Evaluation</li>
+        <li>Dashboards</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <h2>Education</h2>
+
+    <div class="item-card">
+      <h3>BE in Information Science & Engineering</h3>
+      <div class="item-meta">
+        <span>RVCE (RV College of Engineering)</span>
+        <span class="item-badge">CGPA: 9.64</span>
+        <span>2024 – Present</span>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <h3>12th CBSE</h3>
+      <div class="item-meta">
+        <span>IIS Asansol</span>
+        <span class="item-badge">93.4%</span>
+        <span>2022 – 2023</span>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <h3>10th CBSE</h3>
+      <div class="item-meta">
+        <span>IIS Asansol</span>
+        <span class="item-badge">96%</span>
+        <span>2021 – 2022</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications">
+    <h2>Certifications</h2>
+
+    <div class="item-card">
+      <h3>Programming in C</h3>
+      <div class="item-meta">
+        <span>Springboard, Infosys</span>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <h3>Data Science for Engineers</h3>
+      <div class="item-meta">
+        <span>NPTEL</span>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <h3>AI Skills Passport</h3>
+      <div class="item-meta">
+        <span>EY & Microsoft</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Want to connect or discuss projects? Reach out directly:</p>
+    <p style="margin-top: 0.8rem;">
+      <strong>Email:</strong>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=arnabonly2005@gmail.com" target="_blank">
+        arnabonly2005@gmail.com
+      </a>
+    </p>
+    <p style="margin-top: 0.4rem;">
+      <strong>Phone:</strong>
+      <a href="tel:+918101537684">+91 8101537684</a>
+    </p>
+    <div style="margin-top: 1.2rem;">
+      <a href="resume.pdf" target="_blank" class="btn">Download Resume (PDF)</a>
+    </div>
+  </section>
 
   <!-- Socials Section -->
   <section id="socials">
     <h2>Find Me Online</h2>
     <ul>
-      <li><a href="https://github.com/callsignarno" target="_blank">GitHub</a></li>
+      <li><a href="https://github.com/callsignarno" target="_blank">GitHub (@callsignarno)</a></li>
     </ul>
   </section>
 
@@ -97,7 +281,8 @@
   <footer>
     <p>© 2025 CallsignArno. Built with learning and passion 🚀</p>
   </footer>
-  <script src="js/script.js"></script>
 
+  <script src="js/script.js"></script>
 </body>
+
 </html>

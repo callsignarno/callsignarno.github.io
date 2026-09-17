@@ -12,7 +12,9 @@ document.querySelectorAll(".dropdown > a").forEach(toggle => {
     });
 
     // Toggle clicked dropdown
-    menu.classList.toggle("show");
+    if (menu) {
+      menu.classList.toggle("show");
+    }
   });
 });
 
@@ -28,17 +30,26 @@ document.addEventListener("click", (e) => {
 // 3️⃣ Smooth scrolling with offset for sticky header
 document.querySelectorAll("a[href^='#']").forEach(anchor => {
   anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute("href"));
-    if (target) {
-      const headerOffset = document.querySelector("header").offsetHeight;
-      const elementPosition = target.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+    const href = this.getAttribute("href");
+    if (href && href !== "#" && href.length > 1) {
+      const target = document.querySelector(href);
+      if (target) {
+        e.preventDefault();
+        // Close all dropdown menus on selection
+        document.querySelectorAll(".dropdown-menu").forEach(menu => {
+          menu.classList.remove("show");
+        });
 
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth"
-      });
+        const header = document.querySelector("header");
+        const headerOffset = header ? header.offsetHeight : 0;
+        const elementPosition = target.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
+      }
     }
   });
 });
